@@ -34,6 +34,6 @@ exports.validateCaptcha = (req, res) => {
             coins: users[userId].coins,
         });
     } else {
-        return res.status(400).json({ message: 'Incorrect answer!' });
+        return res.status(400).json({ message: 'Incorrect captcha!' });
     }
 };
